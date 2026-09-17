@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace Okosotthon.Models
 {
-    internal class SmsErtesites
+    public class SmsErtesites : Ertesites
     {
+        public string Telefonszam {  get; set; }
+
+        public SmsErtesites(string Telefonszam) 
+        {
+            Telefonszam = Telefonszam;
+        }
+
+        public override void Kuldes(string uzenet)
+        {
+            DateTime ido = DateTime.Now;
+            Console.WriteLine($"SMS - {Telefonszam} {ido}: {uzenet}");
+        }
     }
 }
