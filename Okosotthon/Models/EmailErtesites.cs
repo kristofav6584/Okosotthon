@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Okosotthon.Models
 {
-    internal class EmailErtesites
+    public class EmailErtesites : Ertesites
     {
+        public string Email { get; set; }
+        public string Targy { get; set; }
+
+        public EmailErtesites(string email, string targy) 
+        {
+            Email = email;
+            Targy = targy;
+        }
+
+        public override void Kuldes(string uzenet)
+        {
+            DateTime ido = DateTime.Now;
+            Console.WriteLine($"Email - {Email} Tárgy: {Targy} {ido}");
+        }
     }
 }
