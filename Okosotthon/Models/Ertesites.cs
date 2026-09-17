@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Okosotthon.Models
 {
-    internal class Ertesites
+    public abstract class Ertesites
     {
+        public abstract void Kuldes(string uzenet);
     }
 }
