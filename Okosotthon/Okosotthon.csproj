@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\EmailErtesites.cs" />
+    <Compile Include="Models\Ertesites.cs" />
+    <Compile Include="Models\PushErtesites.cs" />
+    <Compile Include="Models\SmsErtesites.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
